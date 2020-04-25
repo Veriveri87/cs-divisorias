@@ -13,6 +13,16 @@ img {
     --color-white: #fff;
     --color-grey: #707070;
 }
+@font-face{
+    font-family: titles;
+    src: local(Anton-Regular),
+        url(../typos/Anton-Regular.woff2);
+}
+@font-face{
+    font-family: txt;
+    src: local(FiraSans-Light),
+        url(../typos/FiraSans-Light.woff2);
+}
 html {
     font-size: 16px;
     scroll-behavior: smooth;
