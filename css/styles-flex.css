@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+:root {
+    --color-primary: #491628;
+    --color-secondary: #F4467C;
+    --color-black: #111;
+    --color-white: #fff;
+    --color-grey: #707070;
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Fira Sans", sans-serif;
+    color: var(--color-black);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;   
+    color: var(--color-white);
+    font-family: 'Anton', sans-serif;
+}
+nav {
+    background-color: var(--color-primary);
+    padding: 10px 0;
+    font-size: 1.25em;
+}
+nav span {
+    display: none;
+}
+.nav { 
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+   background-color: var(--color-primary);
+   width: 100%;
+}
+.nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 30px;
+    white-space: nowrap;
+    transition: background-color .6s ease-in-out;
+}
+.nav a:hover {
+    background-color: var(--color-secondary);
+    transition: background-color .3s ease-in-out;
+}
+main {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+section {
+    padding: 60px 0;
+}
+h1 {
+    font-size: 5.62em;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    line-height: 1em;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7em;
+    line-height: 2.2em;
+    font-weight: lighter;
+}
+p {
+    line-height: 2em;
+    margin-bottom: 1.9em;
+}
+hr {
+    width: 70%;
+    height: 3px;
+    margin: 25px auto;
+    background-color: #F4467C;
+    border-width: 0;
+    border-style: none;
+}
+.button {
+    background-color: #F4467C;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #F4467C;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.button:hover {
+    background-color: #fff;
+    border: 2px solid;
+    color: #F4467C;
+    font-size: 1.85em;
+}
+.triangulito {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.triangulito::before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-bottom: 13px solid #F4467C;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top: -13px;
+    transition: top .5s ease-in-out;
+}
+.triangulito:hover::before {
+    top: -18px;
+    transition: top .3s ease-in-out;
+}
+.triangulito::after {
+    content: "Subir";
+    font-family: 'Anton', sans-serif;
+    font-size: .8em;
+    color: var(--color-primary);
+}
+.flexibilizator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p-quienes-somos {
+    width: 30%;
+    min-width: 280px;
+}
+.img-quienes-somos {
+    width: 60%;
+    min-width: 300px;
+}
+.section-divisorias h1,
+.section-divisorias h2 {
+    text-align: right;
+}
+.img-divisorias {
+    width: 45%;
+    float: left;
+    margin: 0 10% 20px 0;
+}
+.contenedor-boton {
+    text-align: center;
+}
+
+.contenedor-iconos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.contenedor-iconos > div {
+    width: 30%;
+    min-width: 285px;
+    text-align: center;
+    padding: 10px;
+}
+.section-techos h1,
+.section-techos h2 {
+    text-align: right;
+}
+.section-techos > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section-techos > div > div:first-child {
+    width: 45%;
+    min-width: 290px;
+    margin-bottom: 20px;
+}
+.section-techos > div > div:last-child {
+    width: 45%;
+    min-width: 290px;
+}
+
+.section-suelos > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section-suelos > div > div:first-child {
+    width: 35%;
+    min-width: 300px;
+}
+.section-suelos > div > div:last-child {
+    width: 58%;
+    min-width: 290px;
+    margin-bottom: 20px;
+}
+
+.section-contacto {
+    text-align: center;
+    width: 100%;
+    max-width: 635px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+form {
+    text-align: left;
+}
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+label {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+}
+input[type="checkbox"]{
+    width: initial;
+    display: none;
+}
+input[type="checkbox"] + label {
+    display: inline;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 30px;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+input[type="checkbox"] + label::after {
+    content: url(../img/check-solid.svg);
+    display: none;
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 30px;
+} 
+input[type="checkbox"]:checked + label::after {
+    display: block;
+} 
+
+
+
+input,
+textarea {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    font-size: 1.15em;
+    padding: 15px 10px;
+    margin-bottom: 1.15em;
+}
+textarea {
+    height: 120px;
+    resize: none;
+}
+input.button {
+    width: inherit;
+    margin: 20px auto;
+}
+
+footer div:first-child {
+    background-color: #491628;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+footer div:last-child {
+    text-align: center;
+    font-size: .75em;
+    padding: 15px;
+}
+footer span {
+    display: block;
+}
+footer h4 {
+    font-size: 1.85em;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+address {
+    font-style: normal;
+    font-size: 1em;
+}
+.tlf {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.1em;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+}
+.email {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
