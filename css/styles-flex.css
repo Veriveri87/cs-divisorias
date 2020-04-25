@@ -28,7 +28,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "Fira Sans", sans-serif;
+    font-family: txt;
     color: var(--color-black);
     overflow-x: hidden;
 }
@@ -37,7 +37,7 @@ header {
     text-align: center;
     padding-top: 10px;   
     color: var(--color-white);
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
 }
 nav {
     background-color: var(--color-primary);
@@ -75,7 +75,7 @@ section {
 }
 h1 {
     font-size: 5.62em;
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     font-weight: lighter;
     line-height: 1em;
 }
@@ -85,7 +85,7 @@ h2 {
     margin-bottom: 40px;
 }
 h3 {
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     font-size: 1.7em;
     line-height: 2.2em;
     font-weight: lighter;
@@ -104,7 +104,7 @@ hr {
 }
 .button {
     background-color: #F4467C;
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     color: #fff;
     font-size: 1.8em;
     padding: 10px 30px;
@@ -145,7 +145,7 @@ hr {
 }
 .triangulito::after {
     content: "Subir";
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     font-size: .8em;
     color: var(--color-primary);
 }
@@ -239,7 +239,7 @@ textarea {
     width: 100%;
 }
 label {
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     font-size: 1.2em;
 }
 input[type="checkbox"]{
@@ -248,7 +248,7 @@ input[type="checkbox"]{
 }
 input[type="checkbox"] + label {
     display: inline;
-    font-family: "Fira Sans", sans-serif;
+    font-family: txt;
     font-size: 1.2em;
     position: relative;
     padding-left: 30px;
@@ -310,7 +310,7 @@ footer span {
 }
 footer h4 {
     font-size: 1.85em;
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     margin-bottom: 20px;
     font-weight: lighter;
 }
@@ -319,7 +319,7 @@ address {
     font-size: 1em;
 }
 .tlf {
-    font-family: 'Anton', sans-serif;
+    font-family: titles;
     font-size: 2.1em;
     color: #fff;
     display: block;
